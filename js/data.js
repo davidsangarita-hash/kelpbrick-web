@@ -1,0 +1,43 @@
+/* DATOS EDITABLES de KELP BRICK 2.0. Actualice aqui cifras, textos y resultados de laboratorio. */
+(function(){
+window.KB_DATA={
+mats:[{n:'Sargazo deshidratado',p:40,b:'#6b5a24',c:['#8a6d1f','#4a4a1c','#a98b2e','#3d5a2a','#2e2a14'],f:1},
+{n:'Áridos reciclados (RCD)',p:30,b:'#8a5a45',c:['#a0553a','#777777','#c9c2b8','#5a4036']},
+{n:'Arena fina tamizada',p:15,b:'#b39b78',c:['#c9b58f','#9a8462','#d8c8a6']},
+{n:'Aglomerante (cal/cemento)',p:10,b:'#9a9a94',c:['#b5b5ae','#85857f','#c8c8c2']},
+{n:'Agua',p:5,b:'#3b5f6e',c:['#4d7685','#2f4e5b']}],
+stages:[['Una pieza compacta','Ladrillo entero','Sargazo y escombro prensados en frío forman una pieza sólida, sin pasar por el horno. Arrastre para girarlo.'],
+['La estructura se separa','Cinco capas, cinco materiales','Al abrirse, cada componente ocupa su propio espacio según su proporción.'],
+['Sargazo visible','Fibra del mar','Las fibras, frondas y vesículas del alga refuerzan la mezcla y reducen la densidad del bloque.'],
+['Vista explotada','Composición estimada','Sargazo 40%, áridos reciclados 30%, arena fina 15%, aglomerante 10% y agua 5%.'],
+['Economía circular','Del residuo al muro','Los componentes vuelven a ensamblarse: el sargazo del Caribe y el escombro de Bogotá regresan a la ciudad como material de construcción.']],
+/* Calculadora simple: costo de insumos por ladrillo y rango documentado de maquinaria y equipos del prototipo (COP) */
+calc:{insumo:5000,equipoLo:75000,equipoHi:120000},
+biz:[{t:'Materias primas',n:[['Recolectores de sargazo','Proveedores y recolectores del Caribe que entregan el sargazo seco, lavado y compactado para reducir su salinidad. Costo documentado: $3.000 a $5.000 COP por 300 g.'],
+['Empresas de demolición','Empresas de construcción y demolición que generan escombros aprovechables. Los escombros se recolectan en Ciudad Bolívar y no tienen costo de material (mano de obra propia).'],
+['Proveedores de residuos reciclables','Puntos verdes y proveedores locales que acopian residuos de construcción para su aprovechamiento, además del proveedor de cal o cemento como aglomerante.']]},
+{t:'Transformación',n:[['Clasificación','Se separa y limpia el material para retirar plásticos, basuras y metales sobrantes.'],
+['Procesamiento','El escombro se tritura hasta gravilla fina y el sargazo seco se muele hasta una fibra natural que actúa como aglutinante.'],
+['Mezclado','Arena de escombro, fibra de sargazo, agua y un mínimo de aglomerante sostenible se baten hasta lograr una masa homogénea y moldeable.'],
+['Compactación','La mezcla se prensa en moldes con presión hidráulica o prensa manual de bajo costo; elimina cavidades de aire y da resistencia estructural.'],
+['Curado','De 14 a 28 días a sombra y sol, según la fórmula. Luego se prueba la resistencia antes de distribuir.']]},
+{t:'Comercialización',n:[['Ferreterías','Ferreterías de Ciudad Bolívar como canal de venta y aliados locales.'],
+['Constructoras','Venta directa a constructoras y empresas de construcción de Ciudad Bolívar y Bogotá.'],
+['Distribuidores','Distribuidores de materiales de construcción, parte de la segmentación de clientes.'],
+['Clientes particulares','Familias que construyen o remodelan sus viviendas, con venta desde el punto de producción, redes sociales y página web.'],
+['Proyectos institucionales','Alcaldía Local, entidades ambientales y organizaciones o proyectos de vivienda sostenible; también ferias de emprendimiento y ambientales.']]},
+{t:'Fuentes de ingresos',n:[['Venta de ladrillos','Ingreso principal, mediante alianzas con constructoras, ferreterías y organizaciones, con descuentos por compras en grandes cantidades.'],
+['Venta de agregados reciclados','El escombro procesado puede generar agregados reciclados u otros materiales para construcción.'],
+['Productos derivados del sargazo','Posibles elementos decorativos o complementarios a partir del sargazo; línea por desarrollar.']]}],
+/* Comparador: edite aqui los valores de cada material. */
+cmp:{mats:[{id:'k',n:'KELP BRICK',s:'Sargazo + RCD'},{id:'a',n:'Ladrillo de arcilla',s:'Macizo / tolete convencional'},{id:'c',n:'Bloque de concreto',s:'Hueco 10×20×40 cm'},{id:'s',n:'Ladrillo ecológico de plástico',s:'Alternativa sostenible (PET)'}],
+rows:[['Materias primas',{k:'Sargazo ~40%, RCD ~30%, arena fina ~15%, aglomerante ~10%, agua ~5%',a:'Arcilla',c:'Cemento, agregados y agua',s:'Plástico reciclado triturado (PET, PEAD), cemento, agua y ocasionalmente tierra o arena'}],
+['Aprovechamiento de residuos',{k:'Sí: sargazo y escombros de construcción',a:'No: requiere extracción de arcilla virgen de canteras',c:'No: usa arena, grava y cemento vírgenes',s:'Sí: plástico posconsumo que iría a vertederos'}],
+['Proceso de fabricación',{k:'Recolección, triturado, mezclado, prensado y curado',a:'Moldeo, secado y cocción',c:'Mezclado, moldeo y curado',s:'Triturado del plástico, mezclado en frío con cemento y agua, moldeado, prensado y curado al aire'}],
+['Necesidad de cocción',{k:'No: curado en frío por prensado',a:'Sí: cocción en horno',c:'No requiere cocción en horno',s:'No: curado en frío'}],
+['Peso',{k:'Estimado: 2,0 a 3,5 kg, según la presión de compactación',a:'2,5 a 3,0 kg',c:'10 a 15 kg',s:'1,5 a 2,5 kg'}],
+['Resistencia a compresión',{k:'Objetivo de diseño: 5 a 10 MPa',a:'10 a 20 MPa',c:'7 a 15 MPa (portante o de cerramiento)',s:'7 a 12 MPa'}],
+['Absorción de agua',{k:'Estimada: 10% a 20%. El sargazo retiene humedad; se controla con la compactación o un aditivo impermeabilizante',a:'12% a 15%',c:'8% a 12%',s:'Menor al 5%'}],
+['Costo estimado por unidad',{k:'Costo de producción: $5.000 COP. Precio de venta definido: $7.000 COP',a:'$650 a $1.200 COP',c:'$2.450 a $3.500 COP',s:'$1.500 a $2.500 COP'}],
+['Impacto ambiental',{k:'Sin hornos de cocción; aprovecha sargazo y escombros de construcción',a:'Alto: unos 0,2 a 0,4 kg de CO₂ por ladrillo, por quemar combustibles en hornos a más de 900 °C',c:'Alto: el cemento Portland emite cerca de 0,9 kg de CO₂ por kg producido',s:'Bajo: evita plásticos en vertederos y elimina las emisiones directas por cocción'}]]}
+}})();
